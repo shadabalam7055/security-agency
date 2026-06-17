@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View the Global Security Agency portfolio gallery. Explore VIP protection details, security fleets, industrial safeguarding, event safety operations, and command monitoring rooms.">
+  <title>Gallery | Global Security Agency</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  
+  <!-- Custom CSS stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- --- Sticky Navbar --- -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-shield-shaded navbar-logo-img text-gold"></i>
+        <div class="navbar-brand-text">
+          Global Security
+          <span class="navbar-brand-tagline">"Your Safety, Our Priority"</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="navbar-nav-btns d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            <i class="bi bi-sun-fill"></i>
+          </button>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#requestSecurityModal">
+            <i class="bi bi-shield-fill-check me-2"></i>Request Security
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --- Inner Banner Section --- -->
+  <section class="hero-banner-inner" style="background-image: url('images/cta-banner.png');">
+    <div class="container">
+      <div class="hero-banner-inner-content" data-aos="fade-down">
+        <h1 class="hero-banner-inner-title">Gallery</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Gallery Section --- -->
+  <section class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-center" data-aos="fade-up">
+        <p class="section-subtitle">Visual Overview</p>
+        <h2 class="section-title">Moments of Protection. Commitment in Action.</h2>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="gallery-filters" data-aos="fade-up">
+        <button class="gallery-filter-btn active" data-filter="all">All</button>
+        <button class="gallery-filter-btn" data-filter="event">Event Security</button>
+        <button class="gallery-filter-btn" data-filter="vip">VIP Security</button>
+        <button class="gallery-filter-btn" data-filter="residential">Residential</button>
+        <button class="gallery-filter-btn" data-filter="industrial">Industrial</button>
+        <button class="gallery-filter-btn" data-filter="vehicle">Vehicles</button>
+        <button class="gallery-filter-btn" data-filter="monitoring">Monitoring Rooms</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4 gallery-grid" data-aos="fade-up" data-aos-delay="100">
+        <!-- Item 1: Event -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="event">
+          <div class="gallery-card">
+            <img src="images/event-security.png" alt="Concert Guarding" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Concert Front Guarding</h4>
+              <span class="gallery-overlay-tag">Event Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: VIP -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="vip">
+          <div class="gallery-card">
+            <img src="images/vip-protection.png" alt="Executive Escort" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Executive Escort Detail</h4>
+              <span class="gallery-overlay-tag">VIP Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Residential -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="residential">
+          <div class="gallery-card">
+            <img src="images/residential-security.png" alt="Estate Patrol" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Night Estate Patrol</h4>
+              <span class="gallery-overlay-tag">Residential</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Industrial -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="industrial">
+          <div class="gallery-card">
+            <img src="images/industrial-security.png" alt="Warehouse Guarding" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Industrial Warehouse Guard</h4>
+              <span class="gallery-overlay-tag">Industrial</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Vehicles -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="vehicle">
+          <div class="gallery-card">
+            <img src="images/security-vehicle.png" alt="Security Fleet" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Armored Transport SUV</h4>
+              <span class="gallery-overlay-tag">Vehicles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Monitoring -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="monitoring">
+          <div class="gallery-card">
+            <img src="images/corporate-security.png" alt="Command Center" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Command Control Room</h4>
+              <span class="gallery-overlay-tag">Monitoring Rooms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: VIP -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="vip">
+          <div class="gallery-card">
+            <img src="images/hero-guard.png" alt="Close Protection Officer" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Close Protection CPO</h4>
+              <span class="gallery-overlay-tag">VIP Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Event -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="event">
+          <div class="gallery-card">
+            <img src="images/security-guard.png" alt="Elite Event guards" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Elite Team Formations</h4>
+              <span class="gallery-overlay-tag">Event Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9: Vehicle -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="vehicle">
+          <div class="gallery-card">
+            <img src="images/security-vehicle.png" alt="VIP Escort Car" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">VIP Escort Vehicle</h4>
+              <span class="gallery-overlay-tag">Vehicles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 10: Industrial -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="industrial">
+          <div class="gallery-card">
+            <img src="images/industrial-security.png" alt="Factory Guarding" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Plant Perimeter Checking</h4>
+              <span class="gallery-overlay-tag">Industrial</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 11: Residential -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="residential">
+          <div class="gallery-card">
+            <img src="images/residential-security.png" alt="Smart Villa security" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">Villa Entrance Controls</h4>
+              <span class="gallery-overlay-tag">Residential</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 12: Monitoring -->
+        <div class="col-sm-6 col-md-4 gallery-item" data-category="monitoring">
+          <div class="gallery-card">
+            <img src="images/corporate-security.png" alt="CCTV Supervision" class="gallery-item-img">
+            <div class="gallery-card-overlay">
+              <i class="bi bi-zoom-in gallery-overlay-icon"></i>
+              <h4 class="gallery-overlay-title">24/7 CCTV Supervision</h4>
+              <span class="gallery-overlay-tag">Monitoring Rooms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Custom Image Lightbox --- -->
+  <div class="gsa-lightbox">
+    <div class="gsa-lightbox-content">
+      <button class="gsa-lightbox-close"><i class="bi bi-x-lg"></i></button>
+      <img src="" alt="Selected Security Image" class="gsa-lightbox-img">
+      <div class="gsa-lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-shield-shaded text-gold fs-3 me-2"></i>
+            <span class="footer-logo-text">GLOBAL SECURITY</span>
+          </div>
+          <p class="footer-desc">
+            Providing professional and reliable security solutions for businesses, events, residential properties, and VIP protection.
+          </p>
+          <div class="social-links">
+            <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#security-guards">Security Guards</a></li>
+            <li><a href="services.html#vip-protection">VIP Protection</a></li>
+            <li><a href="services.html#event-security">Event Security</a></li>
+            <li><a href="services.html#corporate-security">Corporate Security</a></li>
+            <li><a href="services.html#residential-security">Residential Security</a></li>
+            <li><a href="services.html#industrial-security">Industrial Security</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-title">Contact Info</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill footer-contact-icon"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill footer-contact-icon"></i>
+            <span>info@globalsecurityagency.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
+            <span>123 Security Nagar, Safe City, India - 400001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill footer-contact-icon"></i>
+            <span>24/7 Available</span>
+          </div>
+          
+          <h4 class="footer-title mt-4">Subscribe Newsletter</h4>
+          <form class="footer-newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="footer-newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            &copy; 2026 Global Security Agency. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Scroll to Top Button --- -->
+  <button class="scroll-to-top" title="Go to Top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- --- Request Security CTA Modal --- -->
+  <div class="modal fade gsa-modal" id="requestSecurityModal" tabindex="-1" aria-labelledby="requestSecurityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="requestSecurityModalLabel">Request Security Consultation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="requestModalForm" novalidate>
+          <div class="modal-body">
+            <p class="text-secondary-custom" style="font-size: 0.85rem; margin-bottom: 1.5rem;">Fill out this quick form and one of our executive security consultants will reach back to you within 2 hours.</p>
+            
+            <div class="gsa-form-group">
+              <i class="bi bi-person gsa-input-icon"></i>
+              <input type="text" class="gsa-control" id="reqName" placeholder="Your Full Name" required>
+            </div>
+            
+            <div class="gsa-form-group">
+              <i class="bi bi-envelope gsa-input-icon"></i>
+              <input type="email" class="gsa-control" id="reqEmail" placeholder="Your Email Address" required>
+            </div>
+            
+            <div class="gsa-form-group">
+              <i class="bi bi-telephone gsa-input-icon"></i>
+              <input type="tel" class="gsa-control" id="reqPhone" placeholder="Your Phone Number" required>
+            </div>
+
+            <div class="gsa-form-group">
+              <i class="bi bi-shield-check gsa-input-icon"></i>
+              <select class="gsa-control" id="reqService" style="padding-left: 2.8rem;" required>
+                <option value="" disabled selected>Select Security Service</option>
+                <option value="guards">Security Guards</option>
+                <option value="vip">VIP Close Protection</option>
+                <option value="event">Event Crowd Control</option>
+                <option value="corporate">Corporate Office Security</option>
+                <option value="residential">Residential Villa Security</option>
+                <option value="industrial">Industrial Site Security</option>
+              </select>
+            </div>
+
+            <div class="gsa-form-group">
+              <i class="bi bi-chat-dots gsa-input-icon"></i>
+              <textarea class="gsa-control" id="reqDetails" rows="3" placeholder="Briefly describe your security requirements..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold px-4 py-2" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-gold px-4 py-2">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- Script Imports --- -->
+  <!-- Bootstrap 5 Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- Custom JS scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

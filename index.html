@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Global Security Agency - Premium, luxury corporate-grade security solutions. Elite protection for high-profile clients, corporate assets, VIPs, events, and residential properties.">
+  <title>Global Security Agency | Premium Security & Protection Services</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  
+  <!-- Custom CSS stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- --- Sticky Navbar --- -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-shield-shaded navbar-logo-img text-gold"></i>
+        <div class="navbar-brand-text">
+          Global Security
+          <span class="navbar-brand-tagline">"Your Safety, Our Priority"</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="navbar-nav-btns d-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            <i class="bi bi-sun-fill"></i>
+          </button>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#requestSecurityModal">
+            <i class="bi bi-shield-fill-check me-2"></i>Request Security
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --- Hero Section --- -->
+  <header class="home-hero" style="background-image: url('images/cta-banner.png');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <p class="hero-subtitle">Welcome To</p>
+          <h1 class="hero-title">Global Security<br><span class="text-gold">Agency</span></h1>
+          <p class="hero-description">
+            Your trusted partner in premium corporate, event, VIP close protection, residential, and industrial security solutions. We deliver reliable, high-end security services designed to safeguard your people, properties, and peace of mind with absolute integrity.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#requestSecurityModal">
+              Request Security
+            </button>
+            <a href="contact.html" class="btn btn-outline-gold">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="hero-image-wrapper">
+            <img src="images/hero-guard.png" alt="Professional Security Officer" class="img-fluid w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- Services Overview Section --- -->
+  <section class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-center" data-aos="fade-up">
+        <p class="section-subtitle">Our Expertise</p>
+        <h2 class="section-title">Services Overview</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="gsa-card">
+            <i class="bi bi-shield-lock gsa-card-icon"></i>
+            <h3 class="gsa-card-title">Security Guards</h3>
+            <p class="gsa-card-text">Trained professional security guards providing armed or unarmed protection for retail, corporate, and physical sites.</p>
+            <a href="services.html#security-guards" class="text-gold d-inline-flex align-items-center mt-3" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
+              READ MORE <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="gsa-card">
+            <i class="bi bi-person-check gsa-card-icon"></i>
+            <h3 class="gsa-card-title">VIP Protection</h3>
+            <p class="gsa-card-text">Specialized close protection and executive security details for corporate leaders, celebrities, and high-profile individuals.</p>
+            <a href="services.html#vip-protection" class="text-gold d-inline-flex align-items-center mt-3" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
+              READ MORE <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="gsa-card">
+            <i class="bi bi-people gsa-card-icon"></i>
+            <h3 class="gsa-card-title">Event Security</h3>
+            <p class="gsa-card-text">Crowd control, access checking, and perimeter safety planning for entertainment concerts, galas, and corporate conferences.</p>
+            <a href="services.html#event-security" class="text-gold d-inline-flex align-items-center mt-3" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
+              READ MORE <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="gsa-card">
+            <i class="bi bi-building gsa-card-icon"></i>
+            <h3 class="gsa-card-title">Corporate Security</h3>
+            <p class="gsa-card-text">End-to-end office security management, lobby desk hospitality, visitor logs, and corporate park security patrols.</p>
+            <a href="services.html#corporate-security" class="text-gold d-inline-flex align-items-center mt-3" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
+              READ MORE <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="gsa-card">
+            <i class="bi bi-house-heart gsa-card-icon"></i>
+            <h3 class="gsa-card-title">Residential Security</h3>
+            <p class="gsa-card-text">Patrolling systems and gate check integration for private residences, luxury condos, villas, and gated housing estates.</p>
+            <a href="services.html#residential-security" class="text-gold d-inline-flex align-items-center mt-3" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
+              READ MORE <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="gsa-card">
+            <i class="bi bi-gear-wide-connected gsa-card-icon"></i>
+            <h3 class="gsa-card-title">Industrial Security</h3>
+            <p class="gsa-card-text">Vigilant security controls for factories, manufacturing units, commercial warehouses, and heavy engineering facilities.</p>
+            <a href="services.html#industrial-security" class="text-gold d-inline-flex align-items-center mt-3" style="font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
+              READ MORE <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Statistics Counter Section --- -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Counter 1 -->
+        <div class="col-sm-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-item">
+            <i class="bi bi-people-fill stat-icon"></i>
+            <div class="stat-number counter-val" data-target="500" data-suffix="+">0+</div>
+            <div class="stat-title">Security Personnel</div>
+          </div>
+        </div>
+        <!-- Counter 2 -->
+        <div class="col-sm-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-item">
+            <i class="bi bi-briefcase-fill stat-icon"></i>
+            <div class="stat-number counter-val" data-target="150" data-suffix="+">0+</div>
+            <div class="stat-title">Active Clients</div>
+          </div>
+        </div>
+        <!-- Counter 3 -->
+        <div class="col-sm-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-item">
+            <i class="bi bi-award-fill stat-icon"></i>
+            <div class="stat-number counter-val" data-target="10" data-suffix="+">0+</div>
+            <div class="stat-title">Years Experience</div>
+          </div>
+        </div>
+        <!-- Counter 4 -->
+        <div class="col-sm-6 col-md-6 col-lg" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <i class="bi bi-clock-fill stat-icon"></i>
+            <div class="stat-number counter-val" data-target="24" data-suffix="/7">0/7</div>
+            <div class="stat-title">Support Channels</div>
+          </div>
+        </div>
+        <!-- Counter 5 -->
+        <div class="col-sm-6 col-md-6 col-lg" data-aos="fade-up" data-aos-delay="500">
+          <div class="stat-item">
+            <i class="bi bi-emoji-smile-fill stat-icon"></i>
+            <div class="stat-number counter-val" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-title">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Why Choose Us Section --- -->
+  <section class="py-5 my-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+          <p class="section-subtitle">Premium Defense</p>
+          <h2 class="section-title text-start mb-4">Why Choose Us</h2>
+          <p class="text-secondary-custom mb-4">
+            We provide a level of excellence that security agencies rarely match. Through careful hiring practices, customized training schemes, and close management oversight, we keep your safety strictly secure.
+          </p>
+          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#requestSecurityModal">
+            Get Consulted Now
+          </button>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="row g-2">
+            <!-- Box 1 -->
+            <div class="col-md-6">
+              <div class="why-choose-us-icon-box">
+                <div class="why-icon">
+                  <i class="bi bi-person-badge-fill"></i>
+                </div>
+                <div>
+                  <h4 class="why-title">Trained Professionals</h4>
+                  <p class="why-text">Guards undergo background screening and security training regimens.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="col-md-6">
+              <div class="why-choose-us-icon-box">
+                <div class="why-icon">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <div>
+                  <h4 class="why-title">Quick Deployment</h4>
+                  <p class="why-text">Efficient onboarding setups enable immediate post deployment.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="col-md-6">
+              <div class="why-choose-us-icon-box">
+                <div class="why-icon">
+                  <i class="bi bi-shield-fill-check"></i>
+                </div>
+                <div>
+                  <h4 class="why-title">Reliable Protection</h4>
+                  <p class="why-text">Rigorous standards of defense ensure absolute site protection.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="col-md-6">
+              <div class="why-choose-us-icon-box">
+                <div class="why-icon">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <div>
+                  <h4 class="why-title">24/7 Availability</h4>
+                  <p class="why-text">Continuous command systems monitor activities day and night.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Box 5 -->
+            <div class="col-md-12">
+              <div class="why-choose-us-icon-box mb-0">
+                <div class="why-icon">
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div>
+                  <h4 class="why-title">Client Focused</h4>
+                  <p class="why-text">Custom tailored defense designs built exactly around each customer's requests.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- CTA Section --- -->
+  <section class="cta-banner-section" style="background-image: url('images/cta-banner.png');" data-aos="zoom-in">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2 class="cta-banner-title">We Are Committed To Your Security</h2>
+        <p class="cta-banner-text">Protecting lives, assets, properties, and values with elite executive defense forces. Reach out to our operators and receive an immediate plan today.</p>
+        <a href="contact.html" class="btn btn-gold">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-shield-shaded text-gold fs-3 me-2"></i>
+            <span class="footer-logo-text">GLOBAL SECURITY</span>
+          </div>
+          <p class="footer-desc">
+            Providing professional and reliable security solutions for businesses, events, residential properties, and VIP protection.
+          </p>
+          <div class="social-links">
+            <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#security-guards">Security Guards</a></li>
+            <li><a href="services.html#vip-protection">VIP Protection</a></li>
+            <li><a href="services.html#event-security">Event Security</a></li>
+            <li><a href="services.html#corporate-security">Corporate Security</a></li>
+            <li><a href="services.html#residential-security">Residential Security</a></li>
+            <li><a href="services.html#industrial-security">Industrial Security</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-title">Contact Info</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill footer-contact-icon"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill footer-contact-icon"></i>
+            <span>info@globalsecurityagency.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
+            <span>123 Security Nagar, Safe City, India - 400001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill footer-contact-icon"></i>
+            <span>24/7 Available</span>
+          </div>
+          
+          <h4 class="footer-title mt-4">Subscribe Newsletter</h4>
+          <form class="footer-newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="footer-newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            &copy; 2026 Global Security Agency. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Scroll to Top Button --- -->
+  <button class="scroll-to-top" title="Go to Top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- --- Request Security CTA Modal --- -->
+  <div class="modal fade gsa-modal" id="requestSecurityModal" tabindex="-1" aria-labelledby="requestSecurityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="requestSecurityModalLabel">Request Security Consultation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="requestModalForm" novalidate>
+          <div class="modal-body">
+            <p class="text-secondary-custom" style="font-size: 0.85rem; margin-bottom: 1.5rem;">Fill out this quick form and one of our executive security consultants will reach back to you within 2 hours.</p>
+            
+            <div class="gsa-form-group">
+              <i class="bi bi-person gsa-input-icon"></i>
+              <input type="text" class="gsa-control" id="reqName" placeholder="Your Full Name" required>
+            </div>
+            
+            <div class="gsa-form-group">
+              <i class="bi bi-envelope gsa-input-icon"></i>
+              <input type="email" class="gsa-control" id="reqEmail" placeholder="Your Email Address" required>
+            </div>
+            
+            <div class="gsa-form-group">
+              <i class="bi bi-telephone gsa-input-icon"></i>
+              <input type="tel" class="gsa-control" id="reqPhone" placeholder="Your Phone Number" required>
+            </div>
+
+            <div class="gsa-form-group">
+              <i class="bi bi-shield-check gsa-input-icon"></i>
+              <select class="gsa-control" id="reqService" style="padding-left: 2.8rem;" required>
+                <option value="" disabled selected>Select Security Service</option>
+                <option value="guards">Security Guards</option>
+                <option value="vip">VIP Close Protection</option>
+                <option value="event">Event Crowd Control</option>
+                <option value="corporate">Corporate Office Security</option>
+                <option value="residential">Residential Villa Security</option>
+                <option value="industrial">Industrial Site Security</option>
+              </select>
+            </div>
+
+            <div class="gsa-form-group">
+              <i class="bi bi-chat-dots gsa-input-icon"></i>
+              <textarea class="gsa-control" id="reqDetails" rows="3" placeholder="Briefly describe your security requirements..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-gold px-4 py-2" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-gold px-4 py-2">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- Script Imports --- -->
+  <!-- Bootstrap 5 Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- Custom JS scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

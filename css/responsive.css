@@ -1,0 +1,240 @@
+/*
+ * Global Security Agency - Responsive Adjustments
+ * Breakpoint Support: 320px, 576px, 768px, 992px, 1200px, 1400px
+ */
+
+/* --- Up to 1400px (Extra Large Screen Adjustments) --- */
+@media (max-width: 1400px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+}
+
+/* --- Up to 1200px (Large Screen Adjustments) --- */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .cta-banner-title {
+    font-size: 2.4rem;
+  }
+  
+  .hero-banner-inner-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* --- Up to 992px (Medium/Large - Tablet Landscape/Desktop Small) --- */
+@media (max-width: 992px) {
+  /* Navbar Adjustments */
+  .navbar-collapse {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 1rem;
+    margin-top: 0.8rem;
+  }
+  
+  .nav-link {
+    padding: 0.8rem 1rem !important;
+    margin: 0.2rem 0;
+  }
+  
+  .nav-link::after {
+    left: 0;
+    transform: none;
+    bottom: 5px;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 30px;
+  }
+  
+  .navbar-nav-btns {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .navbar-nav-btns .btn-gold,
+  .navbar-nav-btns .theme-toggle-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: 0 0 8px var(--glow-shadow);
+  }
+  
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  
+  [data-theme="light"] .navbar-toggler-icon {
+    filter: none;
+  }
+  
+  /* Hero Section */
+  .home-hero {
+    min-height: auto;
+    padding: 8rem 0 4rem 0;
+  }
+  
+  .home-hero::before {
+    background: rgba(11, 11, 11, 0.9);
+  }
+  
+  [data-theme="light"] .home-hero::before {
+    background: rgba(247, 247, 247, 0.9);
+  }
+  
+  .hero-image-wrapper {
+    margin-top: 3rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Sections */
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  /* Timeline */
+  .process-timeline::before {
+    display: none;
+  }
+  
+  .process-timeline {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .process-desc {
+    max-width: 100%;
+  }
+  
+  /* Footer */
+  .footer-bottom-links {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+/* --- Up to 768px (Medium - Tablet Portrait) --- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .cta-banner-title {
+    font-size: 2rem;
+  }
+  
+  .cta-banner-section {
+    padding: 6rem 0;
+  }
+  
+  .hero-banner-inner {
+    padding: 7rem 0 4rem 0;
+  }
+  
+  .hero-banner-inner-title {
+    font-size: 2.2rem;
+  }
+  
+  .stat-item {
+    margin-bottom: 2rem;
+  }
+  
+  .stats-section .row > div:last-child .stat-item {
+    margin-bottom: 0;
+  }
+  
+  .why-choose-us-icon-box {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Gallery filters centered */
+  .gallery-filters {
+    gap: 5px;
+  }
+  
+  .gallery-filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  /* Emergency CTA responsiveness */
+  .emergency-strip-content {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .emergency-phone-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* --- Up to 576px (Small - Mobile Landscape) --- */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .cta-banner-title {
+    font-size: 1.6rem;
+  }
+  
+  .footer {
+    padding: 4rem 0 1.5rem 0;
+  }
+  
+  .gsa-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* --- Up to 320px (Extra Small - Legacy/Small Mobile) --- */
+@media (max-width: 320px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-brand-text {
+    font-size: 1rem;
+  }
+  
+  .navbar-brand-tagline {
+    font-size: 0.55rem;
+  }
+  
+  .btn-gold,
+  .btn-outline-gold {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.75rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
