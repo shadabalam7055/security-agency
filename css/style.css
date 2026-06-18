@@ -55,6 +55,11 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,8 +69,14 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
-  overflow-x: hidden;
+  max-width: 100%;
   transition: background-color 0.4s ease, color 0.4s ease;
+  padding-top: 80px; /* To prevent content being hidden behind fixed navbar */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -195,24 +206,30 @@ a {
 
 /* --- Sticky Navbar --- */
 .navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
   background-color: var(--bg-navbar);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-bottom: 1px solid var(--border-color);
   padding: 0.8rem 0;
   transition: all 0.4s ease;
-  z-index: 1000;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .navbar-logo-img {
-  width: 45px;
-  height: 45px;
-  margin-right: 12px;
+  font-size: 10px;
+  width: 40px;
+  height: 40px;
   color: var(--accent-gold);
 }
 
@@ -222,6 +239,7 @@ a {
   text-transform: uppercase;
   font-size: 1.25rem;
   line-height: 1.1;
+  padding-right: 10px;
   color: var(--text-primary) !important;
 }
 
@@ -848,7 +866,7 @@ a {
   box-shadow: 0 0 8px var(--glow-shadow);
 }
 
-/* --- Gallery Layout (Masonry-like Grid) --- */
+/* --- Gallery Layout (Responsive Bootstrap Natively Handled) --- */
 .gallery-filters {
   display: flex;
   justify-content: center;
@@ -877,19 +895,6 @@ a {
   border-color: var(--accent-gold);
   color: #000000;
   box-shadow: 0 0 10px var(--glow-shadow);
-}
-
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
-}
-
-.gallery-item {
-  padding: 10px;
-  display: block;
-  transition: all 0.4s ease;
 }
 
 .gallery-card {
@@ -1574,4 +1579,50 @@ a {
 
 .gsa-modal .modal-footer {
   border-top: 1px solid var(--border-color);
+}
+
+/* --- Credentials Section --- */
+.certificate-preview-card {
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.certificate-thumb {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.certificate-overlay {
+  background-color: rgba(11, 11, 11, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.certificate-preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px var(--glow-shadow);
+  border-color: var(--accent-gold) !important;
+}
+
+.certificate-preview-card:hover .certificate-thumb {
+  transform: scale(1.03);
+}
+
+.certificate-preview-card:hover .certificate-overlay {
+  opacity: 1 !important;
+}
+
+@media (min-width: 992px) {
+  .border-end-lg {
+    border-right: 1px solid var(--border-color) !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .border-sm-none {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
 }

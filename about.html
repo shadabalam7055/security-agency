@@ -18,54 +18,70 @@
   <!-- Custom CSS stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 
   <!-- --- Sticky Navbar --- -->
   <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <i class="bi bi-shield-shaded navbar-logo-img text-gold"></i>
-        <div class="navbar-brand-text">
-          Global Security
-          <span class="navbar-brand-tagline">"Your Safety, Our Priority"</span>
-        </div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="careers.html">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <div class="navbar-nav-btns d-flex align-items-center gap-3">
-          <button class="theme-toggle-btn" title="Toggle Light/Dark Theme">
-            <i class="bi bi-sun-fill"></i>
-          </button>
-          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#requestSecurityModal">
-            <i class="bi bi-shield-fill-check me-2"></i>Request Security
-          </button>
-        </div>
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Global Security Logo" class="navbar-logo-img">
+
+      <div class="navbar-brand-text">
+        Global Security
+        <span class="navbar-brand-tagline">"Your Safety, Our Priority"</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="careers.html">Careers</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="navbar-nav-btns d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-3">
+        <button class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+
+        <button class="btn btn-gold" data-bs-toggle="modal"
+          data-bs-target="#requestSecurityModal">
+          <i class="bi bi-shield-fill-check me-2"></i>
+          Request Security
+        </button>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- --- Inner Banner Section --- -->
   <section class="hero-banner-inner" style="background-image: url('images/cta-banner.png');">
@@ -105,7 +121,7 @@
             <div class="col-sm-6">
               <div class="gsa-card text-center py-4">
                 <i class="bi bi-people-fill text-gold fs-2 mb-3 d-block"></i>
-                <h3 class="fs-2 fw-bold text-primary mb-1">500+</h3>
+                <h3 class="fs-2 fw-bold text-primary mb-1">100+</h3>
                 <p class="text-secondary-custom mb-0 font-monospace text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">Security Personnel</p>
               </div>
             </div>
@@ -113,7 +129,7 @@
             <div class="col-sm-6">
               <div class="gsa-card text-center py-4">
                 <i class="bi bi-briefcase-fill text-gold fs-2 mb-3 d-block"></i>
-                <h3 class="fs-2 fw-bold text-primary mb-1">150+</h3>
+                <h3 class="fs-2 fw-bold text-primary mb-1">50+</h3>
                 <p class="text-secondary-custom mb-0 font-monospace text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">Active Clients</p>
               </div>
             </div>
@@ -121,7 +137,7 @@
             <div class="col-sm-6">
               <div class="gsa-card text-center py-4">
                 <i class="bi bi-award-fill text-gold fs-2 mb-3 d-block"></i>
-                <h3 class="fs-2 fw-bold text-primary mb-1">10+</h3>
+                <h3 class="fs-2 fw-bold text-primary mb-1">3+</h3>
                 <p class="text-secondary-custom mb-0 font-monospace text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">Years Experience</p>
               </div>
             </div>
@@ -203,6 +219,164 @@
     </div>
   </section>
 
+  <!-- --- Credentials & Certifications Section --- -->
+  <section class="py-5 credentials-section" style="background-color: var(--bg-primary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" data-aos="fade-up">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-title-wrapper text-center">
+        <p class="section-subtitle">— Our Credentials —</p>
+        <h2 class="section-title text-center">Licensed & Certified <span class="text-gold">Security Agency</span></h2>
+        <div class="text-center mt-2 mb-3">
+          <i class="bi bi-shield-fill-check text-gold fs-3"></i>
+        </div>
+        <p class="text-secondary-custom mx-auto" style="max-width: 600px; font-size: 0.95rem;">
+          We are a Government Authorized Private Security Agency compliant with the PSARA Act, 2005.
+        </p>
+      </div>
+
+      <!-- Main Layout Grid -->
+      <div class="row g-5 align-items-center">
+        
+        <!-- Left Column: Certificate Preview (col-lg-7) -->
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="certificate-preview-card glass-card text-center p-3" style="border: 1px solid var(--border-color); cursor: pointer; transition: all 0.4s ease;" onclick="openCertificateLightbox()">
+            <div class="certificate-img-container position-relative overflow-hidden mb-3" style="border: 2px solid var(--accent-gold); border-radius: 8px;">
+              <img src="images/certificate.jpg" alt="License Certificate" class="img-fluid rounded shadow-lg certificate-thumb" style="transition: transform 0.4s ease, filter 0.4s ease;" loading="lazy">
+              <div class="certificate-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center" style="background-color: rgba(11, 11, 11, 0.4); opacity: 0; transition: opacity 0.4s ease;">
+                <i class="bi bi-zoom-in text-gold display-5 mb-2"></i>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center text-gold">
+              <i class="bi bi-search me-2"></i>
+              <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Click to view full certificate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Premium Info Card (col-lg-5) -->
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="gsa-card py-4 px-4 glass-card" style="border: 1px solid var(--border-color); height: auto;">
+            <h3 class="why-title text-gold mb-4" style="font-size: 1.1rem; letter-spacing: 1.5px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+              GOVERNMENT LICENSED. TRUSTED. RELIABLE.
+            </h3>
+            
+            <!-- Credential items -->
+            <div class="credential-list mb-4">
+              <!-- Item 1 -->
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-shield-check text-gold fs-4 me-3 mt-1"></i>
+                <div>
+                  <h4 class="why-title mb-1" style="font-size: 0.95rem; font-weight: 700;">LICENSED</h4>
+                  <p class="why-text" style="font-size: 0.85rem;">Licensed under the Private Security Agencies Regulation Act, 2005 (PSARA)</p>
+                </div>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-award text-gold fs-4 me-3 mt-1"></i>
+                <div>
+                  <h4 class="why-title mb-1" style="font-size: 0.95rem; font-weight: 700;">GOVERNMENT APPROVED</h4>
+                  <p class="why-text" style="font-size: 0.85rem;">Authorized by Government of Uttar Pradesh</p>
+                </div>
+              </div>
+              
+              <!-- Item 3 -->
+              <div class="d-flex align-items-start mb-3">
+                <i class="bi bi-check-circle text-gold fs-4 me-3 mt-1"></i>
+                <div>
+                  <h4 class="why-title mb-1" style="font-size: 0.95rem; font-weight: 700;">VERIFIED & COMPLIANT</h4>
+                  <p class="why-text" style="font-size: 0.85rem;">All operations comply with government regulations and industry standards</p>
+                </div>
+              </div>
+              
+              <!-- Item 4 -->
+              <div class="d-flex align-items-start mb-0">
+                <i class="bi bi-person-badge text-gold fs-4 me-3 mt-1"></i>
+                <div>
+                  <h4 class="why-title mb-1" style="font-size: 0.95rem; font-weight: 700;">PROFESSIONAL & TRAINED</h4>
+                  <p class="why-text" style="font-size: 0.85rem;">Security personnel are background verified and professionally trained</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- License Highlight Box -->
+            <div class="license-highlight-box p-3 mb-4 d-flex align-items-center" style="background-color: rgba(212, 160, 23, 0.05); border: 1px solid var(--border-color); border-radius: 4px;">
+              <i class="bi bi-file-earmark-text text-gold fs-1 me-3"></i>
+              <div style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.5px;">
+                <div class="mb-1 text-uppercase text-secondary-custom">License Number: <span class="text-gold">PSA/L/9/UP/2025/MAR/2/2667</span></div>
+                <div class="mb-1 text-uppercase text-secondary-custom">Date of Issue: <span class="text-white">17/03/2025</span></div>
+                <!-- <div class="text-uppercase text-secondary-custom">Valid Upto: <span class="text-white">11/10/2027</span></div> -->
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="btn btn-gold w-100 py-3 d-flex align-items-center justify-content-center" onclick="openCertificateLightbox()">
+              <i class="bi bi-file-earmark-image me-2 fs-5"></i> View Full Certificate
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Bar -->
+      <div class="trust-bar mt-5 pt-4 border-top" style="border-color: var(--border-color) !important;">
+        <div class="row g-4 justify-content-center">
+          <!-- Indicator 1 -->
+          <div class="col-md-6 col-lg-3 text-center border-end-lg border-sm-none" style="border-color: var(--border-color) !important;">
+            <div class="d-inline-flex align-items-center text-start gap-3">
+              <i class="bi bi-shield-check text-gold fs-2"></i>
+              <div>
+                <h5 class="why-title mb-0 text-white" style="font-size: 0.85rem;">Government Licensed</h5>
+                <span class="why-text d-block" style="font-size: 0.75rem;">PSARA Certified Agency</span>
+              </div>
+            </div>
+          </div>
+          <!-- Indicator 2 -->
+          <div class="col-md-6 col-lg-3 text-center border-end-lg border-sm-none" style="border-color: var(--border-color) !important;">
+            <div class="d-inline-flex align-items-center text-start gap-3">
+              <i class="bi bi-star text-gold fs-2"></i>
+              <div>
+                <h5 class="why-title mb-0 text-white" style="font-size: 0.85rem;">Trusted & Reliable</h5>
+                <span class="why-text d-block" style="font-size: 0.75rem;">Delivering trusted security</span>
+              </div>
+            </div>
+          </div>
+          <!-- Indicator 3 -->
+          <div class="col-md-6 col-lg-3 text-center border-end-lg border-sm-none" style="border-color: var(--border-color) !important;">
+            <div class="d-inline-flex align-items-center text-start gap-3">
+              <i class="bi bi-people text-gold fs-2"></i>
+              <div>
+                <h5 class="why-title mb-0 text-white" style="font-size: 0.85rem;">Professional Team</h5>
+                <span class="why-text d-block" style="font-size: 0.75rem;">Experienced guards</span>
+              </div>
+            </div>
+          </div>
+          <!-- Indicator 4 -->
+          <div class="col-md-6 col-lg-3 text-center">
+            <div class="d-inline-flex align-items-center text-start gap-3">
+              <i class="bi bi-telephone text-gold fs-2"></i>
+              <div>
+                <h5 class="why-title mb-0 text-white" style="font-size: 0.85rem;">24/7 Support</h5>
+                <span class="why-text d-block" style="font-size: 0.75rem;">Round the clock watch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- Custom Certificate Lightbox --- -->
+  <div class="gsa-lightbox" id="certificateLightbox">
+    <div class="gsa-lightbox-content">
+      <button class="gsa-lightbox-close" onclick="closeCertificateLightbox()"><i class="bi bi-x-lg"></i></button>
+      <img src="images/certificate.jpg" alt="License Certificate Full" class="gsa-lightbox-img">
+      <div class="gsa-lightbox-caption">License Certificate - Licence No. 1445</div>
+    </div>
+  </div>
+
   <!-- --- Mission, Vision, Values Section --- -->
   <section class="py-5 my-5">
     <div class="container">
@@ -258,7 +432,8 @@
         <!-- Col 1 -->
         <div class="col-lg-4 col-md-6">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-shield-shaded text-gold fs-3 me-2"></i>
+            <img src="images/logo.png" alt="Global Security Logo" class="navbar-logo-img">
+
             <span class="footer-logo-text">GLOBAL SECURITY</span>
           </div>
           <p class="footer-desc">
@@ -300,15 +475,16 @@
           <h4 class="footer-title">Contact Info</h4>
           <div class="footer-contact-item">
             <i class="bi bi-telephone-fill footer-contact-icon"></i>
-            <span>+91 98765 43210</span>
+            <span>+91 9027254445</span> &nbsp;|&nbsp;
+            <span>+91 7310911609</span>
           </div>
           <div class="footer-contact-item">
             <i class="bi bi-envelope-fill footer-contact-icon"></i>
-            <span>info@globalsecurityagency.com</span>
+            <span>irfanali15071997@gmail.com</span>
           </div>
           <div class="footer-contact-item">
             <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
-            <span>123 Security Nagar, Safe City, India - 400001</span>
+            <span>Near Mannat Hospital, Amroha 244221</span>
           </div>
           <div class="footer-contact-item">
             <i class="bi bi-clock-fill footer-contact-icon"></i>
@@ -337,6 +513,10 @@
           </div>
         </div>
       </div>
+
+      <p style="text-align: center; margin-top: 20px;">
+        Made with love by <a href="https://www.maancreatix.com/" class="text-gold" target="_blank">Maan Creatix</a>
+      </p>
     </div>
   </footer>
 

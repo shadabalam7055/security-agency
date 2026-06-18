@@ -395,3 +395,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 400);
   }
 });
+
+// Global Certificate Lightbox Functions
+window.openCertificateLightbox = function() {
+  const lightbox = document.getElementById('certificateLightbox');
+  if (lightbox) {
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+window.closeCertificateLightbox = function() {
+  const lightbox = document.getElementById('certificateLightbox');
+  if (lightbox) {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+};
+

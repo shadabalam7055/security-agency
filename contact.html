@@ -18,54 +18,70 @@
   <!-- Custom CSS stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
 
   <!-- --- Sticky Navbar --- -->
   <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <i class="bi bi-shield-shaded navbar-logo-img text-gold"></i>
-        <div class="navbar-brand-text">
-          Global Security
-          <span class="navbar-brand-tagline">"Your Safety, Our Priority"</span>
-        </div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="careers.html">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <div class="navbar-nav-btns d-flex align-items-center gap-3">
-          <button class="theme-toggle-btn" title="Toggle Light/Dark Theme">
-            <i class="bi bi-sun-fill"></i>
-          </button>
-          <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#requestSecurityModal">
-            <i class="bi bi-shield-fill-check me-2"></i>Request Security
-          </button>
-        </div>
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Global Security Logo" class="navbar-logo-img">
+
+      <div class="navbar-brand-text">
+        Global Security
+        <span class="navbar-brand-tagline">"Your Safety, Our Priority"</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="careers.html">Careers</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="navbar-nav-btns d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-3">
+        <button class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+
+        <button class="btn btn-gold" data-bs-toggle="modal"
+          data-bs-target="#requestSecurityModal">
+          <i class="bi bi-shield-fill-check me-2"></i>
+          Request Security
+        </button>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- --- Inner Banner Section --- -->
   <section class="hero-banner-inner" style="background-image: url('images/cta-banner.png');">
@@ -221,7 +237,8 @@
         <!-- Col 1 -->
         <div class="col-lg-4 col-md-6">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-shield-shaded text-gold fs-3 me-2"></i>
+            <img src="images/logo.png" alt="Global Security Logo" class="navbar-logo-img">
+
             <span class="footer-logo-text">GLOBAL SECURITY</span>
           </div>
           <p class="footer-desc">
@@ -263,7 +280,7 @@
           <h4 class="footer-title">Contact Info</h4>
           <div class="footer-contact-item">
             <i class="bi bi-telephone-fill footer-contact-icon"></i>
-            <span>+91 9027254445</span>
+            <span>+91 9027254445</span> &nbsp;|&nbsp;
             <span>+91 7310911609</span>
           </div>
           <div class="footer-contact-item">
@@ -272,7 +289,7 @@
           </div>
           <div class="footer-contact-item">
             <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
-            <span>Near Mannat Hospital, Amroha 244231</span>
+            <span>Near Mannat Hospital, Amroha 244221</span>
           </div>
           <div class="footer-contact-item">
             <i class="bi bi-clock-fill footer-contact-icon"></i>
